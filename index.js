@@ -15,10 +15,14 @@ http.createServer(function(req, res){
         });
     } else if (url=='/show'){
 
-    }else if (url=='/insert'){
-        fs.writeFile('test.txt',"Hello SonHandSome",function(err){
-            if(!err){
-                res.end('insert thanh cong');
+    }else if (url=='/login'){
+        fs.readFile('./login/login.html',function(error,data){
+            if (!error) {
+               
+                res.write(data);
+                res.end();
+            } else {
+                res.end('abc');
             }
         });
     }

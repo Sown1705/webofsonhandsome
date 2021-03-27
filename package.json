@@ -1,19 +1,19 @@
 {
-  "name": "webofsonhandsome",
+  "name": "bs-studio",
   "version": "1.0.0",
-  "description": "demo create node.js",
+  "description": "create tinder with node.js",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sown1705/webofsonhandsome.git"
+    "url": "git+https://github.com/Sown1705/Tinder-Clone.git"
   },
-  "author": "stackjava.com",
+  "author": "stacknode",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Sown1705/webofsonhandsome/issues"
+    "url": "https://github.com/Sown1705/Tinder-Clone/issues"
   },
-  "homepage": "https://github.com/Sown1705/webofsonhandsome#readme"
+  "homepage": "https://github.com/Sown1705/Tinder-Clone#readme"
 }
