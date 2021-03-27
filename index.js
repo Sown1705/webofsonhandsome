@@ -2,7 +2,7 @@ var http = require('http');
 var fs = require('fs');
 const { normalize } = require('node:path');
 
-var port = normalize(process.env.PORT || '3000');
+var port = normalize(process.env.PORT || '1234');
 http.createServer(function(req, res){
     res.writeHead('200',{'Content-Type':'text/html'});
     var url = req.url;

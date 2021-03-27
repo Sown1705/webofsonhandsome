@@ -1,20 +1,16 @@
 {
   "name": "webofsonhandsome",
   "version": "1.0.0",
-  "description": "sonhandsome",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node your-script.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Sown1705/webofsonhandsome.git"
   },
-  "keywords": [
-    "1705"
-  ],
-  "author": "hihi",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Sown1705/webofsonhandsome/issues"
