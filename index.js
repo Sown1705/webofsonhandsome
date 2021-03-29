@@ -45,4 +45,4 @@ http.createServer(function(req, res){
             }
         });
     }
-}).listen(process.env.PORT || '1234');
+}).listen(process.env.PORT || '3000');
