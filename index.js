@@ -1,48 +1,28 @@
-var http = require('http');
-var fs = require('fs');
-http.createServer(function(req, res){
-    res.writeHead('200',{'Content-Type':'text/html'});
-    var url = req.url;
-    if(url=='/'){
-        fs.readFile('index.html',function(error,data){
-            if (!error) {
-               
-                res.write(data);
-                res.end();
-            } else {
-                res.end('abc');
-            }
-        });
-    } else if (url=='/show'){
 
-    }else if (url=='/login'){
-        fs.readFile('./login/login.html',function(error,data){
-            if (!error) {
-               
-                res.write(data);
-                res.end();
-            } else {
-                res.end('abc');
-            }
-        });
-    }
-    else if (url=='/update'){      
-        fs.appendFile('test.txt',"Hello SonHandSome01",function(err){
-            if(!err){
-                res.end('update thanh cong');
-            }
-        });
-    }else if (url=='/delete'){
-        fs.unlink('test.txt',function(err){
-            if(!err){
-                res.end('delete thanh cong');
-            }
-        });
-    }else if (url=='/rename'){
-        fs.rename('test.txt',"text.txt",function(err){
-            if(!err){
-                res.end('rename thanh cong');
-            }
-        });
-    }
-}).listen(process.env.PORT || '3000');
+//goi express
+var express=require('express');
+var expressHbs=require('express-handlebars');
+//tao app de cau hinh router
+var app = express();
+//chay len localhost
+
+
+app.engine('handlebars',expressHbs({
+    layoutsDir:__dirname+'/views/layouts',
+    defaultLayout:'main'
+}));
+app.use(express.static('assets'));
+app.set('view engine', 'handlebars');
+app.get('/', function(req, res){
+        res.render('index');
+});
+
+app.get('/chat', function(req, res){
+     res.render('chat');
+});
+
+app.get('/login', function(req, res){
+     res.render('login');
+});
+app.listen(process.env.PORT||3001);
+
