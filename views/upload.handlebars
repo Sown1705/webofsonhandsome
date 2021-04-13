@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>upload</title>
+    <link rel="stylesheet" href="css/Bootstrap-Image-Uploader.css">
+</head>
+
+<body><div class="bootstrap_img_upload">
+<div class="container py-5">
+
+    <header class="text-white text-center">
+        <a href="/swiper"><img src="img/tinder_logo_white.png" width="150" style="float: left; margin-left:-150px"></a>
+        <h1 class="display-4">Images Upload</h1>
+        <img src="https://res.cloudinary.com/mhmd/image/upload/v1564991372/image_pxlho1.svg" alt="" width="150" class="mb-4">
+    </header>
+
+
+    <div class="row py-4">
+        <div class="col-lg-6 mx-auto">
+
+            <!-- Upload image input-->
+           <form action="/uploadImage" method="post" enctype="multipart/form-data">
+            <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+                <input id="upload" type="file" onchange="readURL(this);" class="form-control border-0" name="avatar">
+                {{!-- <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label> --}}
+                <div class="input-group-append">
+                    <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i class="fa fa-cloud-upload mr-2 text-muted"></i><small class="text-uppercase font-weight-bold text-muted">Choose file</small></label>
+                </div>
+                 <button type="submit" style="text-align: center;margin-left:230px">Upload</button>
+            </div></form>
+
+            <!-- Uploaded image area-->
+            <p class="font-italic text-white text-center">The image uploaded will be rendered inside the box below.</p>
+            
+            <div class="image-area mt-4"></div>
+
+        
+        <img id="imageResult" src="#" alt="" class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+        
+
+        </div>
+    </div>
+</div>
+</div>
+    <script src="js/Bootstrap-Image-Uploader.js"></script>
+</body>
+
+</html>

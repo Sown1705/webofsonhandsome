@@ -1,57 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>tinder</title>
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700">
-    <link rel="stylesheet" href="fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="css/Customizable-Background--Overlay.css">
-    <link rel="stylesheet" href="css/ImageHeader.css">
-    <link rel="stylesheet" href="css/Login-Box-En.css">
-    <link rel="stylesheet" href="css/Navigation-with-Button.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Register - Brand</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="css/Profile-Edit-Form.css">
+    <link rel="stylesheet" href="css/Tamplate-SB-Admin-on-BSS.css">
 </head>
 
-<body>
-    <div>
-        <div class="bg-success shadow-sm d-flex d-xl-flex flex-row flex-grow-1 flex-shrink-1 flex-fill justify-content-center flex-wrap justify-content-xl-center align-items-xl-center" style="height: 1080px;width: 100%;background: url(&quot;img/tinder_bg.jpg&quot;) center / cover no-repeat, linear-gradient(black 39%, white 66%, rgb(171,171,171) 67%), rgba(255,255,255,0);">
-            <img class="d-flex float-none flex-row flex-shrink-1 justify-content-start align-items-start align-content-start align-self-start" src="img/tinder_logo_white.png" style="background: rgba(0,0,0,0.1);width: 150px;height: 35.53px;margin: 23px;" loading="auto" width="150px">
-            <div class="text-center d-flex flex-column justify-content-center align-content-center align-self-center mx-auto" id="login-box" style="width: 583.7px;height: 548.6px;margin: 85px 607.6px 0px;padding: -28px;">
-                <div class="login-box-header">
-                    <h4 style="color:rgb(139,139,139);margin-bottom:0px;font-weight:400;font-size:27px;">Login</h4>
-                </div>
-                <div class="login-box-content">
-                    <div class="fb-login box-shadow"><a class="d-flex flex-row align-items-center social-login-link" href="#"><i class="fa fa-facebook" style="margin-left:0px;padding-right:20px;padding-left:22px;width:56px;"></i>Login with Facebook</a></div>
-                    <div class="gp-login box-shadow"><a class="d-flex flex-row align-items-center social-login-link" style="margin-bottom:10px;" href="#"><i class="fa fa-google" style="color:rgb(255,255,255);width:56px;"></i>Login with Google+</a></div>
-                </div>
-                <div class="d-flex flex-row align-items-center login-box-seperator-container">
-                    <div class="login-box-seperator"></div>
-                    <div class="login-box-seperator-text">
-                        <p style="margin-bottom:0px;padding-left:10px;padding-right:10px;font-weight:400;color:rgb(201,201,201);">or</p>
+<body class="bg-gradient-primary" style="background-image: url(img/header.jpg);">
+    <div class="container">
+        <div class="card shadow-lg o-hidden border-0 my-5">
+            <div class="card-body p-0">
+                <div class="row">
+                    <div class="col-lg-5 d-none d-lg-flex">
+                        <div class="flex-grow-1 bg-register-image" style="background-image: url(&quot;img/4.jpg&quot;);"></div>
                     </div>
-                    <div class="login-box-seperator"></div>
-                </div>
-                <div class="email-login" style="background-color:#ffffff;"><input type="email" class="email-imput form-control" style="margin-top:10px;" required="" placeholder="Email" minlength="6"><input type="password" class="password-input form-control" style="margin-top:10px;" required="" placeholder="Password" minlength="6"></div>
-                <div class="submit-row" style="margin-bottom:8px;padding-top:0px;"><button class="btn btn-primary btn-block box-shadow" id="submit-id-submit" type="submit">Login</button>
-                    <div class="d-flex justify-content-between">
-                        <div class="form-check form-check-inline" id="form-check-rememberMe"><input class="form-check-input" type="checkbox" id="formCheck-1" for="remember" style="cursor:pointer;" name="check"><label class="form-check-label" for="formCheck-1"><span class="label-text">Remember Me</span></label></div><a id="forgot-password-link" href="#">Forgot Password?</a>
+                    <div class="col-lg-7">
+                        <div class="p-5">
+                            <div class="text-center">
+                                <h4 class="text-dark mb-4">Create an Account!</h4>
+                            </div>
+                            <form class="user">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="First Name" name="first_name"></div>
+                                    <div class="col-sm-6"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Last Name" name="last_name"></div>
+                                </div>
+                                <div class="form-group"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email Address" name="email"></div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Password" name="password"></div>
+                                    <div class="col-sm-6"><input class="form-control form-control-user" type="password" id="exampleRepeatPasswordInput" placeholder="Repeat Password" name="password_repeat"></div>
+                                </div><button class="btn btn-primary btn-block text-white btn-user" type="submit">Register Account</button>
+                                <hr><a class="btn btn-primary btn-block text-white btn-google btn-user" role="button"><i class="fab fa-google"></i>&nbsp; Register with Google</a><a class="btn btn-primary btn-block text-white btn-facebook btn-user" role="button"><i class="fab fa-facebook-f"></i>&nbsp; Register with Facebook</a>
+                                <hr>
+                            </form>
+                            <div class="text-center"><a class="small" href="forgot-password.html">Forgot Password?</a></div>
+                            <div class="text-center"><a class="small" href="login.html">Already have an account? Login!</a></div>
+                        </div>
                     </div>
-                </div>
-                <div id="login-box-footer" style="padding:10px 20px;padding-bottom:23px;padding-top:18px;">
-                    <p style="margin-bottom:0px;">Don't you have an account?<a id="register-link" href="#">Sign Up!</a></p>
                 </div>
             </div>
-            <button class="btn btn-primary d-table-row float-left" type="button" style="margin: 1px;margin-top: -971px;margin-right: 23px;font-size: 16px;width: 110.275px;color: #eeeeee;background: rgba(0,0,0,0.1);font-family: 'Titillium Web', sans-serif;font-weight: 600;font-style: normal;height: 39px;line-height: 23px;letter-spacing: 2px;opacity: 1;filter: brightness(200%) contrast(200%) saturate(0%);border-style: none;border-color: rgba(238,238,238,0.02);margin-left: -100px;">ENGLISH</button><button class="btn btn-primary d-table-row float-left" type="button" style="margin: 1px;margin-top: -971px;margin-right: 23px;font-size: 16px;width: 101px;color: var(--pink);background: var(--white);font-family: 'Titillium Web', sans-serif;font-weight: 600;font-style: normal;height: 36px;line-height: 23px;letter-spacing: 1px;">LOG IN</button>
         </div>
     </div>
-    <script src="js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="js/Profile-Edit-Form.js"></script>
 </body>
 
 </html>
